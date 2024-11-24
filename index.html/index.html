@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Forex trading tips, daily updates, forex courses, and funded accounts to help you grow in forex.">
+  <title>Forex World - Trading & Education Hub</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <h1>Forex World</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#articles">Articles</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#funded-accounts">Funded Accounts</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#subscribe" id="subscribeBtn">Subscribe</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h2>Your Forex Journey Starts Here</h2>
+    <p>Stay updated with daily forex news, learn with expert courses, and get access to funded accounts to scale your trading.</p>
+    <a href="#courses" class="cta-btn">Start Learning</a>
+  </div>
+</section>
+
+<!-- Forex Articles Section -->
+<section id="articles" class="articles-section">
+  <h2>Latest Forex Articles</h2>
+  <div class="articles">
+    <!-- Dynamically Loaded Articles -->
+  </div>
+</section>
+
+<!-- Courses Section -->
+<section id="courses" class="courses-section">
+  <h2>Our Forex Courses</h2>
+  <div class="courses">
+    <div class="course-card">
+      <h3>Forex 101: Getting Started</h3>
+      <p>Perfect for beginners. Learn the basics of forex trading and build a strong foundation.</p>
+      <a href="#" class="cta-btn" onclick="showPaymentModal('Forex 101: Getting Started', 49.99)">Enroll Now</a>
+    </div>
+    <div class="course-card">
+      <h3>Advanced Forex Strategies</h3>
+      <p>Take your trading to the next level with advanced techniques and market analysis.</p>
+      <a href="#" class="cta-btn" onclick="showPaymentModal('Advanced Forex Strategies', 99.99)">Enroll Now</a>
+    </div>
+    <div class="course-card">
+      <h3>Mastering Risk Management</h3>
+      <p>Learn how to manage risk effectively and protect your trading capital.</p>
+      <a href="#" class="cta-btn" onclick="showPaymentModal('Mastering Risk Management', 79.99)">Enroll Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- Funded Accounts Section -->
+<section id="funded-accounts" class="funded-section">
+  <h2>Get Access to Funded Accounts</h2>
+  <p>Scale your trading with a funded account. No need to risk your capital, get funding to trade with.</p>
+  <a href="#contact" class="cta-btn">Apply Now</a>
+</section>
+
+<!-- Subscription Pop-Up -->
+<div id="subscriptionModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Subscribe to Our Newsletter</h2>
+    <form id="subscriptionForm">
+      <input type="email" name="email" placeholder="Your Email" required>
+      <button type="submit" class="cta-btn">Subscribe</button>
+    </form>
+  </div>
+</div>
+
+<!-- Payment Modal -->
+<div id="paymentModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Course Enrollment</h2>
+    <p id="courseName"></p>
+    <p>Price: $<span id="coursePrice"></span></p>
+    <form action="#" method="POST">
+      <button type="submit" class="cta-btn">Pay Now</button>
+    </form>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <h2>Contact Us</h2>
+  <form action="#" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit" class="cta-btn">Send Message</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2024 Forex World. All rights reserved.</p>
+</footer>
+
+<!-- Scroll-to-Top Button -->
+<div class="scroll-to-top" onclick="scrollToTop()">↑</div>
+
+<script src="script.js"></script>
+</body>
+</html>
